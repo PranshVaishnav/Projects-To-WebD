@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8"/>
+  <title>Learning</title>
+  <link rel='stylesheet' href='practice.css'/>
+  <script type="text/javascript">
+  function validateForm() {
+var x = document.forms["myForm"]["fname"].value;
+if (x == "") {
+  alert("Name must be filled out");
+  return false;
+}
+}
+  </script>
+</head>
+<body>
+  <div id="a" class="page">
+    <div class="top"></div>
+    <div class="head"><img src='images/header.svg'/></div>
+    <div class="container">
+      <div class="feature feature_1"><img src='images/feature.svg'/></div>
+      <div class="feature feature_2"><img src='images/feature.svg'/></div>
+      <div class="feature feature_3"><img src='images/feature.svg'/></div>
+    </div>
+    <div class="sign"> <img src='images/sign-up.svg'/> </div>
+    <div class="content"> <img src='images/content.svg'/> </div>
+  </div>
+<button type="button" onclick='document.getElementById("a").innerHTML="Hello"'>CLICK ME</button>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <!--
+       CIS213 Unit 3, Graded Exercise 1
+       Author:
+       Date: 4/18/2022
+       -->
+       <meta charset="utf-8" />
+       <meta name= "viewpoint" content= "width=device-width,initial-scale=1.0">
+       <title> , Confirmation </title>            <!--     Replacing </style> with <style>         -->
+
+
+        <style>
+       body {
+           text-align: center;
+       }
+
+       #closeB {
+           display: inline-block;
+           background: green;
+           color: white;
+           font-size: 10 pt;
+           padding: 5px;
+       }
+
+           #closeB:hover {
+               cursor: default;
+           }
+   </style>
+</head>
+<body>
+   <p>Your address has been updated.</p>
+   <p id="closeB">Close</p>
+   <script>
+       function closeWindow() {
+           window.close();
+       }
+
+       function createEventListner() {
+           var submitButton = document.getElementById("closeB");
+           if(submitButton.addEventListener) {
+           submitButton.addEventListener ("click" , closeWindow, false);
+       }
+       else if(submitButton.attachEvent) {
+           submitButton.addEventListener("onclick" , closeWindow);
+       }
+   }
+
+       if (window.addEventListener) {
+           window.addEventListener("load" , createEventListner , false);
+       }
+       else if (window.attachEvent) {
+           window.addEventListener("onload" , createEventListner);
+       }
+   </script>
+</body>
+</html>

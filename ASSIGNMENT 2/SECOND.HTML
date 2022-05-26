@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms and Tables</title>
+    <style >
+      form{
+        border:2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="5" cellspacing="0" align="center">
+      <tr>
+        <td ALIGN="CENTER">DAY / PERIOD</td>
+        <td ALIGN="CENTER">I<br>09:30-10:20</td>
+        <td ALIGN="CENTER">II<br>10:20-11:10</td>
+        <td ALIGN="CENTER">III<br>11:10-12:00</td>
+        <td ALIGN="CENTER">12:00-12:40</td>
+        <td ALIGN="CENTER">IV<br>12:40-01:30</td>
+        <td ALIGN="CENTER">V<br>01:30-02:20</td>
+        <td ALIGN="CENTER">VI<br>02:20-03:10</td>
+        <td ALIGN="CENTER">VII<br>03:10-04:00</td>
+      </tr>
+      <tr>
+        <td ALIGN="CENTER">MONDAY</td>
+        <td ALIGN="CENTER">ENG</td>
+        <td ALIGN="CENTER">MATH</td>
+        <td ALIGN="CENTER">CHE</td>
+        <td rowspan="6" align="center">
+                <h2>L<br>U<br>N<br>C<br>H</h2>
+        </td>
+        <td  colspan="3" ALIGN="CENTER">LAB</td>
+        <td ALIGN="CENTER">PHY</td>
+      </tr>
+      <tr>
+        <td ALIGN="CENTER">TUESDAY</td>
+        <td  colspan="3" ALIGN="CENTER">LAB</td>
+        <td ALIGN="CENTER">ENG</td>
+        <td ALIGN="CENTER">CHE</td>
+        <td ALIGN="CENTER">MATH</td>
+        <td ALIGN="CENTER">PE</td>
+      </tr>
+      <tr>
+        <td ALIGN="CENTER">WEDNESDAY</td>
+        <td ALIGN="CENTER">PE</td>
+        <td ALIGN="CENTER">CHE</td>
+        <td ALIGN="CENTER">ENG</td>
+        <td ALIGN="CENTER">HIN</td>
+        <td ALIGN="CENTER">SSc</td>
+        <td ALIGN="CENTER">MATH</td>
+        <td ALIGN="CENTER">ART</td>
+      </tr>
+      <tr>
+        <td ALIGN="CENTER">THURSDAYY</td>
+        <td ALIGN="CENTER">ENG</td>
+        <td ALIGN="CENTER">PE</td>
+        <td ALIGN="CENTER">HIN</td>
+        <td ALIGN="CENTER">SANS</td>
+        <td ALIGN="CENTER">ART</td>
+        <td ALIGN="CENTER">GEO</td>
+        <td ALIGN="CENTER">IP</td>
+      </tr>
+      <tr>
+        <td ALIGN="CENTER">FRIDAY</td>
+        <td ALIGN="CENTER">IP</td>
+        <td ALIGN="CENTER">PE</td>
+        <td ALIGN="CENTER">MATH</td>
+        <td ALIGN="CENTER">ENG</td>
+        <td ALIGN="CENTER">SSc</td>
+        <td ALIGN="CENTER">CHE</td>
+        <td ALIGN="CENTER">HIN</td>
+      </tr>
+
+    </table>
+<br><br>
+    <h2>STUDENT FEEDBACK</h2>
+    <h3 style=text-align:center;>Please help us improving by filling up this form</h3>
+   <BR><BR>
+ <form >
+   <label for="name">TEACHER NAME</label><br><br> <input type="text" name="name"  placeholder="Enter Teacher's Name" size=50><br><br>
+   <label for="name">SUBJECT &emsp;</label> <input type="text" name="name"  placeholder="Enter Subject's Name" size=50>&emsp;&emsp;&emsp;
+   <label for="name">COURSE CODE &emsp;</label> <input type="text" name="name"  placeholder="Enter Course Code" size=50><br><br>
+   <label for="name">Why did you choose this course? &emsp;</label>
+   <select id="reason" >
+    <option>Degree Requirement</option>
+    <option>Job</option>
+    <option>Learn</option>
+    <option>Skills</option>
+  </select>
+  <br><br>
+  <label for="name">Level of knowledge on start of course &emsp;</label>
+  <select id="reason" >
+   <option>Beginner</option>
+   <option>Intermediate</option>
+   <option>Advanced</option>
+ </select>
+ <br><br>
+ <label for="name">Level of efforts invested in course &emsp;</label>
+ <select id="reason" >
+  <option>Poor</option>
+  <option>Good</option>
+  <option>Very Good</option>
+  <option>Excellent</option>
+</select>
+<br><br>
+<label for="name">Level of knowledge at end of course &emsp;</label>
+<select id="reason" >
+ <option>Poor</option>
+ <option>Good</option>
+ <option>Very Good</option>
+ <option>Excellent</option>
+</select>
+<br><br>
+<label for="name">Level of Communication &emsp;</label>
+<select id="reason" >
+ <option>Poor</option>
+ <option>Good</option>
+ <option>Very Good</option>
+ <option>Excellent</option>
+</select>
+<br><br>
+<label for="name">Feedback about the course &emsp;</label><br><br>
+<textarea name="name" rows="5" cols="80"></textarea><br><br>
+<label for="name">Would you recommend this course to other people: &emsp;</label>
+<input type="radio" name = "ans" value="yes" checked> Yes &emsp;&emsp;
+<input type="radio" name = "ans" value="no"> No <br><br><br><br>&emsp;&emsp;&emsp;
+<button type="submit" onclick="alert('Thanks for your Feedback')" form="form1" value="Submit">Submit</button>&emsp;&emsp;&emsp;&emsp;&emsp;
+<input type="reset">
+</form>
+
+  </body>
+</html>
